@@ -1,0 +1,17 @@
+
+.columns{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 30px;
+  height: 100px;
+}
+
+.color-botones-productos{
+  background-color:rgba(36, 25, 2, 0.993) ;
+  color: white;
+  height: 30px;
+  margin-top:20px;
+}
+.color-botones-productos:hover{
+  background-color: grey
+}

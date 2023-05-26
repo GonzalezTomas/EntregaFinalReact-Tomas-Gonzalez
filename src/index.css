@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.fondo{
+  background-image: url("./img/fondo-1.jpg");
+}
+
+.color-original {
+  background-color: white;
+}
+
+.color-activo {
+  background-color: black;
+}
+
+.color-boton-oscuro-claro{
+  color: grey
+}
