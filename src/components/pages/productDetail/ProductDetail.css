@@ -1,0 +1,12 @@
+.productos-center {
+  background-image: url("../../../img/fondo-1.jpg");
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.centrar-descripcion{
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: wheat;
+}

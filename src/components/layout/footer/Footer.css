@@ -1,0 +1,14 @@
+.Fondo-Footer {
+  background-color: rgb(165, 108, 108);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.insta {
+  color: white;
+}
+
+.wpp {
+  color: white;
+}
