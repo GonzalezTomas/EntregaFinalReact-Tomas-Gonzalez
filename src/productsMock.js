@@ -1,12 +1,10 @@
 export const products = [
   {
-    id: 1,
+    title: "CHOCOLATE CON MANI",
 
-    title: "BARRA DE CHOCOLATE",
+    price: 1100,
 
-    price: "$750",
-
-    stock: 2,
+    stock: 0,
 
     description: "Barra de chocolate con mani.",
 
@@ -16,13 +14,11 @@ export const products = [
   },
 
   {
-    id: 2,
+    title: "BOMBON DE CHOCOLATE",
 
-    title: "BOMBOM DE CHOCOLATE",
+    price: 450,
 
-    price: "$750",
-
-    stock: 5,
+    stock: 7,
 
     description: "Bombon de chocolate con relleno de dulce de leche.",
 
@@ -32,13 +28,11 @@ export const products = [
   },
 
   {
-    id: 3,
+    title: "CHOCOLATE CON ALMENDRAS",
 
-    title: "BARRA DE CHOCOLATE",
+    price: 1000,
 
-    price: "$750",
-
-    stock: 5,
+    stock: 10,
 
     description: "Barra de chocolate con almendras.",
 
@@ -48,11 +42,9 @@ export const products = [
   },
 
   {
-    id: 4,
+    title: "BOMBON DE CHOCOLATE EN CORAZON",
 
-    title: "BOMBOM DE CHOCOLATE",
-
-    price: "$750",
+    price: 500,
 
     stock: 5,
 

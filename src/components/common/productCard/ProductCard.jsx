@@ -23,7 +23,7 @@ const ProductCard = ({ elemento }) => {
         <Typography variant="body2" color="text.secondary">
           {elemento.description}
         </Typography>
-        {elemento.price}
+        ${elemento.price}
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${elemento.id}`}>

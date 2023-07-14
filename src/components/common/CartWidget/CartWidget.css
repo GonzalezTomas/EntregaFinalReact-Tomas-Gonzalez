@@ -1,6 +1,4 @@
-.posicion{
-    margin-top: 20px;
-}
+
 .columna-carrito{
     display: grid;
     grid-template-columns: repeat(2,10px);
