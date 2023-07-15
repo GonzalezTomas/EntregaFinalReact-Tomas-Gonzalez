@@ -5,6 +5,8 @@ import { db } from "../../../firebaseConfig";
 import { collection, addDoc, updateDoc, doc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
+import fondo from "../../../img/fondo-1.jpg";
+import correctoLogo from "../../../img/nenefeliz.png";
 
 const CheckoutContainer = () => {
   const { cart, getTotalPrice, clearCart } = useContext(CartContext);
@@ -50,16 +52,71 @@ const CheckoutContainer = () => {
   });
 
   return (
-    <div>
-      {orderId ? (
-        <h1>Su compra fue exitosa! El numero de comprobante es: {orderId}</h1>
-      ) : (
-        <Checkout
-          handleSubmit={handleSubmit}
-          handleChange={handleChange}
-          errors={errors}
-        />
-      )}
+    <div
+      style={{
+        backgroundImage: `url(${fondo})`,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          padding: "40px",
+          borderRadius: "10px",
+          maxWidth: "600px",
+          textAlign: "center",
+        }}
+      >
+        {orderId ? (
+          <div>
+            <h1
+              style={{ color: "white", fontSize: "24px", marginBottom: "20px" }}
+            >
+              Su compra fue exitosa!
+            </h1>
+            <img
+              src={correctoLogo}
+              alt="Correcto"
+              style={{ width: "300px", height: "300px" }}
+            />
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <h3
+                style={{
+                  color: "white",
+                  fontSize: "18px",
+                  marginRight: "10px",
+                }}
+              >
+                El número de comprobante es:
+              </h3>
+              <h3
+                style={{
+                  color: "orange",
+                  fontSize: "18px",
+                  marginLeft: "10px",
+                }}
+              >
+                {orderId}
+              </h3>
+            </div>
+          </div>
+        ) : (
+          <Checkout
+            handleSubmit={handleSubmit}
+            handleChange={handleChange}
+            errors={errors}
+          />
+        )}
+      </div>
     </div>
   );
 };
