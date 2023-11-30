@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.fondo{
-  background-image: url("./img/fondo-1.jpg");
+.fondo {
+  background-color: red;
 }
 
 .color-original {
@@ -15,6 +15,6 @@
   background-color: black;
 }
 
-.color-boton-oscuro-claro{
-  color: grey
+.color-boton-oscuro-claro {
+  color: grey;
 }

@@ -1,3 +1,6 @@
+/* Navbar.css */
+
+/* Estilos generales */
 .columns {
   width: 100%;
   display: flex;
@@ -5,7 +8,7 @@
   gap: 120px;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(165, 108, 108);
+  background-color: #bea74b;
 }
 
 .color-botones-productos {
@@ -14,9 +17,89 @@
   height: 30px;
   margin-top: 20px;
 }
+
 .color-botones-productos:hover {
   background-color: grey;
 }
+
 .logo {
   width: 100px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #bea74b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .mobile-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f1;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #ddd;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  /* Oculta los botones de Indumentaria y Decoraciones en dispositivos móviles */
+  .dropdown.mobile-hidden {
+    display: none !important;
+  }
+}
+
+/* Estilos para dispositivos de escritorio */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

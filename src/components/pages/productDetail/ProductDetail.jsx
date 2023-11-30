@@ -2,8 +2,6 @@ import "./ProductDetail.css";
 import ItemCount from "../../ItemCount";
 
 const ProductDetail = ({ productSelected, cantidad, onAdd }) => {
-  
-
   return (
     <>
       {productSelected && (
@@ -25,7 +23,7 @@ const ProductDetail = ({ productSelected, cantidad, onAdd }) => {
             onAdd={onAdd}
           />
         ) : (
-          <h3>No Hay Stock</h3>
+          <h3>No hay stock.</h3>
         )}
       </div>
     </>
