@@ -32,7 +32,7 @@ export const Navbar = () => {
           <div className="mobile-menu">
             <Link to="/">Todos</Link>
             <Link to="/category/Bombones">Bombones</Link>
-            <Link to="/category/Chocolates">Chocolates</Link>
+            <Link to="/category/Chocolates">ropa</Link>
             {/* Agrega más enlaces según tus categorías */}
           </div>
         )}
