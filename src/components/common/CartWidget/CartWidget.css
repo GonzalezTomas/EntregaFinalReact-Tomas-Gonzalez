@@ -1,17 +1,16 @@
-
-.columna-carrito{
-    display: grid;
-    grid-template-columns: repeat(2,10px);
+.columna-carrito {
+  display: grid;
+  grid-template-columns: repeat(2, 10px);
 }
 
-.color-boton-carrito{
-color: white;
-background-color: red;
-height: 30px;
-margin-top:20px;
-margin-left: -100px;
+.color-boton-carrito {
+  color: white;
+  background-color: red;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: -100px;
 }
 
-.color-boton-carrito:hover{
-    background-color: grey;
+.color-boton-carrito:hover {
+  background-color: grey;
 }

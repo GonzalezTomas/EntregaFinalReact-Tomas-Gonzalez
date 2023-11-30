@@ -1,77 +1,30 @@
-/* Navbar.css */
-
-/* Estilos generales */
-.columns {
+.navbar {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 120px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #bea74b;
 }
 
+.enlaces {
+  color: black;
+  text-decoration: none;
+}
 .color-botones-productos {
-  background-color: rgba(36, 25, 2, 0.993);
+  background-color: rgb(155, 155, 4);
   color: white;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .color-botones-productos:hover {
-  background-color: grey;
+  background-color: black;
 }
 
 .logo {
   width: 100px;
-}
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #bea74b;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .mobile-menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    background-color: #f1f1f1;
-  }
-
-  .mobile-menu a:hover {
-    background-color: #ddd;
-  }
-
-  .desktop-menu {
-    display: none;
-  }
-
-  /* Oculta los botones de Indumentaria y Decoraciones en dispositivos móviles */
-  .dropdown.mobile-hidden {
-    display: none !important;
-  }
 }
 
 /* Estilos para dispositivos de escritorio */
@@ -83,8 +36,8 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: rgb(215, 215, 175);
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -97,9 +50,67 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(179, 179, 106);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Estilos adicionales para el carrito en dispositivos de escritorio */
+.desktop-menu {
+  margin-top: 20px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .dropdown.mobile-hidden {
+    display: none !important;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(
+      190,
+      167,
+      75,
+      0.8
+    ); /* Agrega un fondo con transparencia */
+    backdrop-filter: blur(5px); /* Aplica un filtro de desenfoque */
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .mobile-menu a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(215, 215, 175);
+  }
+
+  .mobile-menu a:hover {
+    background-color: rgb(179, 179, 106);
+  }
+
+  .desktop-menu {
+    display: none;
+  }
 }
